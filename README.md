@@ -23,6 +23,7 @@ This project solidified my understanding of the core pillars of SIEM: log collec
 <h2>Utilities Used</h2>
 
 - <b>Elastic SIEM</b>
+- Kali Terminal
 - <b>Log Files</b>
 
 
@@ -33,7 +34,8 @@ This project solidified my understanding of the core pillars of SIEM: log collec
 
 <h2>Links</h2>
 
-- <b>Splunk Cloud:</b> https://www.splunk.com/en_us/download/splunk-cloud.html
+- <b>Elastic (ELK) SIEM:</b> https://cloud.elastic.co/registration
+- <b>Kali VM Download:</b> https://www.kali.org/get-kali/#kali-platforms   
 - <b>Oracle VM Virtualbox:</b> https://www.virtualbox.org/
 
 
