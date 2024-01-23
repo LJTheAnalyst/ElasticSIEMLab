@@ -1,4 +1,4 @@
-<h1>Splunk Cloud in VirtualBox - Mastering Searches, Commands, Reports, and Dashboards</h1>
+<h1>Elastic SIEM - Mastering Event Management</h1>
 
 <h2>Description</h2>
 This is a comprehensive guide detailing the process of creating an Elastic Stack Security Information and Event Management (SIEM) home lab using the Elastic Web portal and a Kali Linux virtual machine (VM) using Oracle VM Virtualbox. The core focus for this project is to further my experience with generating and analyzing security events, setting up agents for log forwarding, creating threat detection rules, establishing security alerts, and creating dashboards for analysis. Using the VM environment I will generate events using the Kali terminal then configure an agent to forward data to the SIEM, query and analyze the logs in the SIEM, then create a dashboard for visual data analysis and communication with key stakeholders.
