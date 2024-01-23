@@ -11,11 +11,12 @@ This is a comprehensive guide detailing the process of creating an Elastic Stack
 
 <br> From my Elastic SIEM home lab project, I extracted several key learnings that boosted my security analysis and threat detection skills:
 - Understanding the security event lifecycle: I gained practical experience generating, collecting, analyzing, and responding to security events, simulating real-world attacks to see the full cycle in action.
-- Log forwarding mastery: Utilizing agents like Filebeat and Winlogbeat, I learned how to efficiently collect logs from diverse sources and centralize them in Elastic SIEM for comprehensive analysis.
+- Log forwarding mastery: Utilizing agents like Elastic Defend, I learned how to efficiently collect logs from diverse sources and centralize them in Elastic SIEM for comprehensive analysis.
 - Data visualization for insight: Crafting custom dashboards in Kibana transformed raw data into actionable insights, allowing me to visualize trends, identify vulnerabilities, and monitor security posture effectively.
 - Proactive threat hunting: Creating and fine-tuning custom detection rules empowered me to actively hunt for threats in the logs, catching suspicious activity before it could escalate.
-Alerting without the fatigue: By configuring different alert levels and notification channels, I learned to balance timely awareness of critical threats with avoiding being overwhelmed by trivial events.
-<br>This project solidified my understanding of the core pillars of SIEM: log collection, analysis, visualization, detection, and alerting. It equipped me with valuable skills to apply in real-world security monitoring and threat defense scenarios.
+- Alerting without the exhaustion: By configuring different alert levels and notification channels, I learned to balance timely awareness of critical threats with avoiding being overwhelmed by trivial events. </br>
+
+This project solidified my understanding of the core pillars of SIEM: log collection, analysis, visualization, detection, and alerting. It equipped me with valuable skills to apply in real-world security monitoring and threat defense scenarios.
 <br/>
 
 
