@@ -73,8 +73,8 @@ To forward the logs, I will be using Elastic Agent. Elastic Agent is a single, u
 <br>To Install the agent on my Kali VM I have to install the necessary integrations. I will select the “Elastic Defend” and follow the instructions to install the Elastic agent on my Kali VM in the Kali terminal. The Elastic Defend Integration will provide the VM with prevention, detection, and response capabilities with deep visibility for EPP, EDR, SIEM, and Security Analytics.</br>
 <br><img src="https://imgur.com/uiyzSNn.png" height="80%" width="80%" alt="Nessus Essentials"/><br/>
 <br><img src="https://imgur.com/TSoupcP.png" height="80%" width="80%" alt="Nessus Essentials"/><br/>
-<br><img src="https://imgur.com/sseoQ8m.png" height="80%" width="80%" alt="Nessus Essentials"/><br/>
-<br>•	Being that I am using Linux on my VM, I will make sure “Linux” is selected and then copy that command to my clipboard and paste that command into the Kali terminal. <br/>
+<br><img src="https://imgur.com/v74D5Ky.png" height="80%" width="80%" alt="Nessus Essentials"/><br/>
+<br>Being that I am using Linux on my VM, I will make sure “Linux” is selected and then copy that command to my clipboard and paste that command into the Kali terminal. <br/>
 <br><img src="https://imgur.com/v7hITu3.png" height="80%" width="80%" alt="Nessus Essentials"/><br/>
 <br><img src="https://imgur.com/mBsvup6.png" height="80%" width="80%" alt="Nessus Essentials"/><br/>
 <br>To verify that the agent successfully downloaded, I will use the terminal command ‘sudo systemctl status elastic-agent.service’. Additionally, inside of the Elastic interface I am able to see that a new endpoint was added, which is the host named ‘kali’. <br/>
@@ -109,18 +109,16 @@ Now that I have forwarded data from the Kali VM to the SIEM, I can start queryin
 <br/>
 ---------
 Below I will be creating a simple dashboard to visualize the count of security events over time.  <br/>
-<br><img src="https://imgur.com/8rknKop.png" height="80%" width="80%" alt="Nessus Essentials"/><br/>
-<br><img src="https://imgur.com/8rknKop.png" height="80%" width="80%" alt="Nessus Essentials"/><br/>
+<br><img src="https://imgur.com/1grru0I.png" height="80%" width="80%" alt="Nessus Essentials"/><br/>
+<br><img src="https://imgur.com/sxnQvmw.png" height="80%" width="80%" alt="Nessus Essentials"/><br/>
 <br>For the first visualization, I selected “Bar vertical stacked” as the chart type. This will create a chart that shows the count of events over time. <br/>
-<br><img src="https://imgur.com/rOaAGwh.png" height="80%" width="80%" alt="Nessus Essentials"/><br/>
+<br><img src="https://imgur.com/TRnxctj.png" height="80%" width="80%" alt="Nessus Essentials"/><br/>
 <br>In the “Metrics” section of the visualization editor on the right, select “Count” as the vertical field type and “Timestamp” for the horizontal field. This will show the count of events over time.<br/>
-<br><img src="https://imgur.com/K97hIpH.png" height="80%" width="80%" alt="Nessus Essentials"/><br/>
-<br>In the “Metrics” section of the visualization editor on the right, I selected “Count” as the vertical field type and “Timestamp” for the horizontal field. This will show the count of events over time.<br/>
-<br><img src="https://imgur.com/vuFZ85K.png" height="80%" width="80%" alt="Nessus Essentials"/><br/>
+<br><img src="https://imgur.com/UyIjKbw.png" height="80%" width="80%" alt="Nessus Essentials"/><br/>
 <br>A title was added to the chart, the name of the horizontal and vertical axis was changed, and the visualization was saved to the dashboard.<br/>
-<br><img src="https://imgur.com/vuFZ85K.png" height="80%" width="80%" alt="Nessus Essentials"/><br/>
+<br><img src="https://imgur.com/c1C3vwE.png" height="80%" width="80%" alt="Nessus Essentials"/><br/>
 <br>To add more visualizations to the dashboard, additional events will be created from the kali terminal.<br/>
-<br><img src="https://imgur.com/We4Xc1s.png" height="80%" width="80%" alt="Nessus Essentials"/><br/>
+<br><img src="https://imgur.com/oeFcbZs.png" height="80%" width="80%" alt="Nessus Essentials"/><br/>
 <br/>
 
 <h3><b>Step 7: Create an Alert </b></h3>
