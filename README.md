@@ -23,7 +23,7 @@ This project solidified my understanding of the core pillars of SIEM: log collec
 <h2>Utilities Used</h2>
 
 - <b>Elastic SIEM</b>
-- Kali Terminal
+- <b>Kali Terminal</b>
 - <b>Log Files</b>
 
 
