@@ -105,32 +105,23 @@ Now that I have forwarded data from the Kali VM to the SIEM, I can start queryin
 <br/>
 
 
-<h3><b>Step 6: Create an Alert </b></h3>
+<h3><b>Step 6: Create a Dashboard to Visualize the Events</b></h3>
 <br/>
 ---------
-I will be creating an alert in Elastic SIEM to detect Nmap scans based on custom queries. Alerts serve as a vital component in a SIEM system, ensuring prompt detection and response to security incidents. These alerts are crafted based on predefined rules or customized queries, tailored to trigger precise actions when specific conditions are met. <br/>
+Below I will be creating a simple dashboard to visualize the count of security events over time.  <br/>
 <br><img src="https://imgur.com/8rknKop.png" height="80%" width="80%" alt="Nessus Essentials"/><br/>
-<br>The first step is to create and define a new rule. <br/>
+<br><img src="https://imgur.com/8rknKop.png" height="80%" width="80%" alt="Nessus Essentials"/><br/>
+<br>For the first visualization, I selected “Bar vertical stacked” as the chart type. This will create a chart that shows the count of events over time. <br/>
 <br><img src="https://imgur.com/rOaAGwh.png" height="80%" width="80%" alt="Nessus Essentials"/><br/>
+<br>In the “Metrics” section of the visualization editor on the right, select “Count” as the vertical field type and “Timestamp” for the horizontal field. This will show the count of events over time.<br/>
 <br><img src="https://imgur.com/K97hIpH.png" height="80%" width="80%" alt="Nessus Essentials"/><br/>
+<br>In the “Metrics” section of the visualization editor on the right, I selected “Count” as the vertical field type and “Timestamp” for the horizontal field. This will show the count of events over time.<br/>
 <br><img src="https://imgur.com/vuFZ85K.png" height="80%" width="80%" alt="Nessus Essentials"/><br/>
-<br>Under “Custom query,” I typed event.action: “nmap_scan” which is the condition for the rule and will match all events with the action “nmap_scan.<br/>
+<br>A title was added to the chart, the name of the horizontal and vertical axis was changed, and the visualization was saved to the dashboard.<br/>
 <br><img src="https://imgur.com/vuFZ85K.png" height="80%" width="80%" alt="Nessus Essentials"/><br/>
-<br>Under the “About rule” section I set the default severity level to high with a Default risk score of 85.<br/>
+<br>To add more visualizations to the dashboard, additional events will be created from the kali terminal.<br/>
 <br><img src="https://imgur.com/We4Xc1s.png" height="80%" width="80%" alt="Nessus Essentials"/><br/>
-<br>Runtime for rules are adjusted under “Schedule rule”. Being that this alert was set to a severity level of high, I will schedule this alert to run every 5 minutes.<br/>
-<br><img src="https://imgur.com/S0wgBpr.png" height="80%" width="80%" alt="Nessus Essentials"/><br/>
-<br>In the “Actions” section, I will select the action of email to send when the rule is triggered which will be configured with SMTP. <br/>
-<br><img src="https://imgur.com/QGtBdZu.png" height="80%" width="80%" alt="Nessus Essentials"/><br/>
-<br><img src="https://imgur.com/h9OPRYZ.png" height="80%" width="80%" alt="Nessus Essentials"/><br/>
-<br><img src="https://imgur.com/upgfmbg.png" height="80%" width="80%" alt="Nessus Essentials"/><br/>
-<br>Following a new nmap scan, it is displayed that the scan was detected and included in the dashboard.<br/>
-<br><img src="https://imgur.com/h9OPRYZ.png" height="80%" width="80%" alt="Nessus Essentials"/><br/>
-<br>Additional panels were added to the dashboard to display analytics for event logs. These visualizations are based on rules created from custom queries. Custom queries are query-based rule, which searches the defined indices and creates an alert when one or more documents match the rule’s query.<br/>
-<br><img src="https://imgur.com/upgfmbg.png" height="80%" width="80%" alt="Nessus Essentials"/><br/>
-<br />
-
-
+<br/>
 
 <h3><b>Step 7: Create an Alert </b></h3>
 <br/>
@@ -155,6 +146,5 @@ I will be creating an alert in Elastic SIEM to detect Nmap scans based on custom
 <br><img src="https://imgur.com/h9OPRYZ.png" height="80%" width="80%" alt="Nessus Essentials"/><br/>
 <br>Additional panels were added to the dashboard to display analytics for event logs. These visualizations are based on rules created from custom queries. Custom queries are query-based rule, which searches the defined indices and creates an alert when one or more documents match the rule’s query.<br/>
 <br><img src="https://imgur.com/upgfmbg.png" height="80%" width="80%" alt="Nessus Essentials"/><br/>
-<br />
 <br />
 </p>
